@@ -1,27 +1,30 @@
 #include <stdio.h>
 
 int main() {
-    int torre = 1, bispo = 1, rainha;
 
-    printf("MOVIMENTAÇÃO DA TORRE\n");
-    while (torre <= 5) {
-        printf("A torre se move para a direita: passo %d\n", torre);
-        torre++;
+    
+// O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação
+
+    printf("----MOVIMENTAÇÃO DA TORRE----\n");
+    int i =1;
+    while(i <= 5) {
+        printf("Torre: Direita\n");
+        i++;
     }
 
-    printf("\nMOVIMENTAÇÃO DO BISPO\n");
+    printf("----MOVIMENTAÇÃO DO BISPO----\n");
+    int j = 1;
     do {
-        printf("O bispo se move na diagonal direita-cima: passo %d\n", bispo);
-        bispo++;
-    } while (bispo <= 5);
+        printf("Bispo: Direita\n"); 
+        printf("Bispo: Cima\n");
+        j++;
+    } while (j <= 5);
 
-    printf("\nMOVIMENTAÇÃO DA RAINHA\n");
-    for (rainha = 1; rainha <= 7; rainha++) {
-        if (rainha % 2 == 0)
-            printf("A rainha se move para a esquerda: passo %d\n", rainha);
-        else
-            printf("A rainha se move para cima: passo %d\n", rainha);
-    }
+    printf("----MOVIMENTAÇÃO DA RAINHA---\n");
+
+    for (int k = 1; k <= 8; k++) {
+    printf("Rainha: Esquerda\n");
+}
 
     return 0;
 }
